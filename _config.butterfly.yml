@@ -7,15 +7,13 @@
 #   name || link || icon
 
 menu:
-  Home: / || fas fa-home
-  Archives: /archives/ || fas fa-archive
-  Tags: /tags/ || fas fa-tags
-  Categories: /categories/ || fas fa-folder-open
-  List||fas fa-list:
-    Music: /music/ || fas fa-music
-    Movie: /movies/ || fas fa-video
-  Link: /link/ || fas fa-link
-  About: /about/ || fas fa-heart
+  主页: / || fas fa-home
+  目录: /archives/ || fas fa-archive
+  标签: /tags/ || fas fa-tags
+  分类: /categories/ || fas fa-folder-open
+  音乐: /music/ || fas fa-music
+  友情链接: /link/ || fas fa-link
+  关于: /about/ || fas fa-heart
 
 # Hide the child menu items in mobile sidebar
 hide_sidebar_menu_child: false
@@ -35,14 +33,14 @@ code_word_wrap: false
 copy:
   enable: true
   copyright:
-    enable: false
-    limit_count: 50
+    enable: true
+    limit_count: 100
 
 # social settings (社交圖標設置)
 # formal:
 #   icon: link || the description
 social:
-  # fab fa-github: https://github.com/xxxxx || Github
+  fab fa-github: https://github.com/Ribbor || Github
   # fas fa-envelope: mailto:xxxxxx@gmail.com || Email
 
 # search (搜索)
@@ -136,8 +134,8 @@ error_img:
 
 # A simple 404 page
 error_404:
-  enable: false
-  subtitle: 'Page Not Found'
+  enable: true
+  subtitle: '页面不见啦'
   background: https://i.loli.net/2020/05/19/aKOcLiyPl2JQdFD.png
 
 post_meta:
@@ -167,7 +165,7 @@ wordcount:
 # 3: auto_excerpt (default)
 # false: do not show the article introduction
 index_post_content:
-  method: 3
+  method: 2
   length: 500 # if you set method to 2 or 3, the length need to config
 
 # Post
@@ -182,8 +180,8 @@ toc:
 post_copyright:
   enable: true
   decode: false
-  license: CC BY-NC-SA 4.0
-  license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+  license: 署名-相同方式共享 4.0
+  license_url: http://creativecommons.org/licenses/by-sa/4.0/
 
 # Sponsor/reward
 reward:
@@ -207,7 +205,7 @@ post_edit:
 # Related Articles
 related_post:
   enable: true
-  limit: 6 # Number of posts displayed
+  limit: 3 # Number of posts displayed
   date_type: created # or created or updated 文章日期顯示創建日或者更新日
 
 # figcaption (圖片描述文字)
@@ -226,12 +224,12 @@ anchor: false
 
 # Displays outdated notice for a post (文章過期提醒)
 noticeOutdate:
-  enable: false
+  enable: true
   style: flat # style: simple/flat
-  limit_day: 500 # When will it be shown
+  limit_day: 100 # When will it be shown
   position: top # position: top/bottom
-  message_prev: It has been
-  message_next: days since the last update, the content of the article may be outdated.
+  message_prev: 本文距上次更新已经过去
+  message_next:  天，其中的信息可能已经过时，请酌情参考！
 
 # Share System (分享功能)
 # --------------------------------------
@@ -408,8 +406,8 @@ crisp:
 footer:
   owner:
     enable: true
-    since: 2020
-  custom_text:
+    since: 2021
+  custom_text: 欢迎来到我的世界！
   copyright: true # Copyright of theme and framework
 
 # Analysis
@@ -698,18 +696,18 @@ busuanzi:
 # Time difference between publish date and now (網頁運行時間)
 # Formal: Month/Day/Year Time or Year/Month/Day Time
 runtimeshow:
-  enable: false
-  publish_date:
+  enable: true
+  publish_date: 3/22/2021 21:50:00
 
 # Aside widget - Newest Comments
 newest_comments:
-  enable: false
+  enable: true
   sort_order: # Don't modify the setting unless you know how it works
   limit: 6
   storage: 10 # unit: mins, save data to localStorage
   avatar: true
   # You can only choose one, or neither
-  valine: false
+  valine: true
   github_issues:
     enable: false
     repo:
@@ -859,6 +857,17 @@ inject:
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
     # - <script src="xxxx"></script>
+
+# Artitalk
+  # see https://artitalk.js.org/
+  artitalk:
+    enable: true
+    appId: R0xgDcFlzdazoNX2Q77y4I04-MdYXbMMI
+    appKey: t7lDzehmEEPLX5IrLnVBFmRx
+    path:
+    js:
+    option:
+    front_matter:
 
 # CDN
 # Don't modify the following settings unless you know how they work
